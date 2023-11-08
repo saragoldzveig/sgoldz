@@ -3,7 +3,7 @@
 Portafolio de mis trabajos de diseño, enfocado en trabajos gráficos, editoriales y de ilustración.
 
 **Objetivo general** 
-Optimizar la accesibilidad y visualización de mi portafolio mediante el diseño web.
+- Optimizar la accesibilidad y visualización de mi portafolio mediante el diseño web.
 
 **¿Para quiénes es esta propuesta?** 
 - Oficina de diseño en Chile que busque diseñador gráfico para contrato. Oficina en surgimiento, joven y con enfoque en diseño editorial, con interés en la experimentación y espacio para la creatividad.
