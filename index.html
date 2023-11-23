@@ -1,498 +1,513 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <!--En la siguiente línea voy por el estilo CSS que ofrece Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!--estilo CSS al que puede conmplementar o contradecir-->
-        <style>
-            section {
-                scroll-margin-top: 50px;
-            }
-            nav {
-                backdrop-filter: blur(0.5rem);
-            }
-            #foto {
-                background: transparent url("https://picsum.photos/id/581/800/600?blur=8") 0 0 no-repeat;
-                background-size: cover;
-            }
-            .modal-dialog {
-            max-width: 90%;
-            width: 80%;
-            max-height: 90%;
-            height:80%;
-            margin: auto;
-            display: center;
-            align-items: center;
-            justify-content: center;
-            }
+<!-- /*
+* Template Name: Minimal
+* Template Author: Untree.co
+* Author URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
 
-            footer{
-                background: #4647FA;
-            }
-        </style>
-        <title>Sara Goldzveig</title>
-    </head>
-    <body>
-        <!--Barra de navegación fija al tope-->
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Sara Goldzveig</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#lasEspecialidades">Especialidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#losTrabajos">Trabajos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#lasOpiniones">Opiniones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#losContactos">Contactos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--Encabezado-->        
-        <header class="vh-100" id="foto">
-            <div class="position-absolute top-50 start-50 translate-middle w-50">
-                <p class="fs-4"> 
-                    Diseño lorem ipsum dolor sit amet, consectetur adipiscing elit. In id ipsum at est venenatis vulputate et eu nibh. Curabitur quis orci in tellus tempus semper. En la práctica, me he <a href="#lasEspecialidades" class="link-dark">especializado en ilustración, diseño gráfico y editorial</a>.
-                </p>
-            </div>
-        </header>
-        <!--Los símbolos en este SVG escondido serán reutilizados más abajo-->
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-            <symbol id="asterisk" viewBox="0 0 16 16">
-            <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
-            </symbol>
-            <symbol id="caset" viewBox="0 0 16 16">
-                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </symbol>
-        </svg>
-        <!--Sección de #lasEspecialidades-->        
-        <section class="bg-light" id="lasEspecialidades">
-            <div class="container py-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="h4 fw-bolder">
-                            <svg class="me-1 mb-1" width="1em" height="1em" fill="#00E100"><use href="#asterisk"></use></svg> Gráfico
-                        </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id ipsum at est venenatis vulputate et eu nibh. Curabitur quis orci in tellus tempus semper.</p>
-                        <small>#grafico</small>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="h4 fw-bolder">
-                            <svg class="me-1 mb-1" width="1em" height="1em" fill="#00E100"><use href="#asterisk"></use></svg> Editorial
-                        </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id ipsum at est venenatis vulputate et eu nibh. Curabitur quis orci in tellus tempus semper.</p>
-                        <small>#editorial</small>
-                    </div>
-                    <div class="col-lg-4">
-                        <h2 class="h4 fw-bolder">
-                            <svg class="me-1 mb-1" width="1em" height="1em" fill="#00E100"><use href="#asterisk"></use></svg> Ilustración
-                        </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id ipsum at est venenatis vulputate et eu nibh. Curabitur quis orci in tellus tempus semper.</p>
-                        <small>#ilustracion</small>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Sección de #losTrabajos-->        
-        <section class="border-top border-bottom" id="losTrabajos">
-            <div class="container py-5">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="trabajos"></div>
-            </div>
-        </section>
-        <!--Sección de #lasOpiniones-->        
-        <section class="bg-light" id="lasOpiniones">
-            <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Opiniones</h2>
-                    <p class="lead mb-0">Algunos clientes felices</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
-                        <!-- Primer comentario-->
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-body p-4">
-                                <p class="mb-1">😁 Muy lindo todo! Me encantó</p>
-                                <div class="small text-muted text-end">— María Pérez</div>
-                            </div>
-                        </div>
-                        <!-- Segundo comentario-->
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-body p-4">
-                                <p class="mb-1">🤯 Muy buenos proyectos ¡Felicitaciones!</p>
-                                <div class="small text-muted text-end">— Juan Gómez</div>
-                            </div>
-                        </div>
-                        <!-- Tercer comentario-->
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-body p-4">
-                                <p class="mb-1">😌  Súper interesante todo</p>
-                                <div class="small text-muted text-end">— anónimo</div>
-                            </div>
-                        </div>
-                        <!-- Listo, no más comentarios-->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Sección de #losContactos-->        
-        <section class="border-top border-bottom" id="losContactos">
-            <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Contactos</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body text-center">                        
-                                <h3 class="m-0 fs-5"><span class="fs-1">📍</span><br/>Dirección</h4>
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body text-center">
-                                <h3 class="m-0 fs-5"><span class="fs-1">📧</span><br/>Email</h4>
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body text-center">
-                                <h3 class="m-0 fs-5"><span class="fs-1"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg></span><br/>Teléfono</h4>
-                                <div class="small text-black-50">+56 9 5555 5555</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- El pie de página-->
-        <footer class="py-4 text-white">
-            <div class="container px-5"><p class="text-center small">Sara Goldzveig &copy; 2023</p></div>
-        </footer>
-<!-- Portfolio Modals 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">La transformación del papel</h2>
-                                    <p class="item-intro text-muted">Fanzine desplegable / Afiche.
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal013.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal012.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal011.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Taller VII
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Editorial
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Sara Goldzveig</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="lines-wrap">
+    <div class="lines-inner">
+      <div class="lines"></div>
+    </div>
+  </div>
+  <!-- END lines -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sara Goldzveig<span class="text-primary">.</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home-section">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio-section">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="untree_co-section pb-0" id="home-section"> 
+  <div class="untree_co-section pb-0" id="home-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+          <h1 class="heading gsap-reveal-hero mb-3"><strong>Sara Goldzveig<span class="text-primary">.</span> </strong></h1>
+          <h2 class="subheading gsap-reveal-hero mb-4">
+            Freelance Creative & Professional Graphics Designer.
+          </h2> 
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Entre líneas</h2>
-                                    <p class="item-intro text-muted">Libro objeto sobre la decodificación del lenguaje.</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal021.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal022.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal023.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Proyecto personal
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Ilustración
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+    <div class="container">
+
+
+      <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+      <div id="portfolio-single-holder"></div>
+
+      <div class="portfolio-wrapper">
+
+        <div id="posts" class="row">
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Obsessed Book</h3>
+                  <p>web, branding</p>
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">La forma del lenguaje</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal031.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal032.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal033.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Taller VII
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Editorial
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <img src="images/img_1.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Book Binding</h3>
+                  <p>illustration, application</p>
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Flores marchitándose</h2>
-                                    <p class="item-intro text-muted">Serie de grabados en metal.</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal041.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal042.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal043.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Taller de Grabado en metal
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Gráfico
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <img src="images/img_2.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Fresh Fruits</h3>
+                  <p>web, branding</p>
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">El niño y el ciervo</h2>
-                                    <p class="item-intro text-muted">Afiche para Obra de teatro.</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal051.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal052.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal053.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Taller VII y Teatro UC
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Editorial
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <img src="images/img_3.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Powerful Speaker</h3>
+                  <p>web, branding</p>
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Agüita pa la guatita</h2>
-                                    <p class="item-intro text-muted">Fanzine Ilustrado.</p>
-                                   <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal061.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal062.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal063.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Taller de Ilustración creativa
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Ilustración
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <img src="images/img_4.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Wireless Headset</h3>
+                  <p>web, branding</p>
                 </div>
-            </div>
-        </div>
-         <!-- Portfolio item 7 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">En el Infierno</h2>
-                                    <p class="item-intro text-muted">Ilustración a lápiz gráfito</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal071.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal072.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal073.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Taller IV
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Ilustración
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <img src="images/img_5.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Black & White Cubic</h3>
+                  <p>web, branding</p>
                 </div>
-            </div>
-        </div>
-         <!-- Portfolio item 8 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Errado</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal081.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal082.jpg" alt="..." />
-                                    <img class="img-fluid d-block mx-auto" src="https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal083.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            Taller VIII
-                                        </li>
-                                        <li>
-                                            Editorial
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar proyecto
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <img src="images/img_6.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Nike Shoe</h3>
+                  <p>illustration, application</p>
                 </div>
-            </div>
+              </div>
+              <img src="images/img_7.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Old Typewriter</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img src="images/img_8.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Walking Man</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img src="images/img_9.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Progress Journal</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img src="images/img_10.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>The Dog</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img src="images/img_11.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Beautiful Woman</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img src="images/img_12.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Book Binding</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img src="images/img_2.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
-        <!-- Lo que sigue es JavaScript a secas-->
-       <script>
-            async function portfolio() {
-                const consulta = await fetch("https://raw.githubusercontent.com/saragoldzveig/clase12/main/portafolio.json");
-                const data = await consulta.json();
-                var donde = document.querySelector("#trabajos");
-                data.forEach(function (t, i) {
-                    donde.innerHTML +=
-                        `<article class="col"><div class="card h-100 shadow-sm ${t.soporte}"><img src="${t.fotos[0]}" class="card-img-top"><div class="card-body"><h3 class="fs-5"><a href="#" class="link-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal${i + 1}">${t.nombre}</a></h3><p>${t.abstract}</p><small>#${t.soporte}</small></div></div></article>`;
-                });
-            }
-            portfolio().catch((error) => console.error(error));
-        </script>
-    </body>
-</html>
+      </div>
+
+
+        <!-- </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="untree_co-section pb-0" id="services-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Services</strong></h2>
+            <p class="gsap-reveal-hero">The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-7.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Marketing</h3>
+              <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-6.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Photography</h3>
+              <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-1.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Web Design</h3>
+              <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-8.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">App Development</h3>
+              <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-4.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Search Ranking</h3>
+              <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-5.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Branding</h3>
+              <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+        <div data-aos="fade-left" data-aos-delay="200">
+
+    <div class="untree_co-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contact</strong></h2>
+            <p class="gsap-reveal-hero">Available for work. Get in touch</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" placeholder="Firstname">
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" placeholder="Lastname">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <input type="email" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Write your message..."></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 form-group">
+                  <input type="submit" class="btn btn-black" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+
+    <div class="site-footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Home</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#">Untree.co</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Projects</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">Untree.co</a></li>
+                <li><a href="#">Free Templates</a></li>
+                <li><a href="#">WordPress Themes</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <ul class="list-unstyled links mb-4">
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+              </ul>
+
+              <h3>Connect</h3>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              </ul>
+
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+
+
+
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+
+              **==========
+            -->
+            <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
+            </p>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wave-animate.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic.animation.gsap.min.js"></script>
+
+
+    <script src="js/custom.js"></script>
+    
+  </body>
+
+  </html>
