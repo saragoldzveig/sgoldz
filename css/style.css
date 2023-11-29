@@ -10,7 +10,7 @@
     scroll-behavior: smooth; } }
 
 body {
-  margin-left: 0.5rem;
+  margin-left: 140px !important;
   margin-right: 140px !important;
   margin-top: 50px !important;
   font-family: 'Space Grotesk', sans-serif;
@@ -46,7 +46,7 @@ body {
 
 hr {
   font-family: 'Space Grotesk', sans-serif;
-  margin: 0.5rem;
+  margin: 1rem 0;
   color: #181b1f;
   background-color: #fadadd;
   border: 0;
@@ -363,6 +363,19 @@ a:hover, a:active, a:focus {
   font-weight: 400;
   letter-spacing: 4px;
 }
+ 
+.logo {
+    font-size: 24px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+    color: black; /* Color del texto */
+    display: block; 
+    line-height: 2;
+    transition: color 0.3s ease-in-out; 
+}
+
+.logo:hover {
+    color: #ff0080; /* Color del texto al pasar el cursor */
+}
 
 
 /*---------------------------------------
@@ -384,7 +397,7 @@ a:hover, a:active, a:focus {
 }
 
 .sk-spinner-wordpress.sk-spinner {
-  background-color: #ff0080;
+  background-color: #bdc3c7;
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -395,7 +408,7 @@ a:hover, a:active, a:focus {
 
 .sk-spinner-wordpress .sk-inner-circle {
   display: block;
-  background-color: #ff0080;
+  background-color: #ffffff;
   width: 16px;
   height: 16px;
   position: absolute;
@@ -473,8 +486,10 @@ a:hover, a:active, a:focus {
   padding-bottom: 42px;
 }
 
-#about .col-md-8 {
-  padding-left: 0px;
+#about .col-md-8:first-child {
+  padding-left: 0;
+  #about .col-md-8:last-child 
+  padding-right: 0;
 }
 
 #about .col-md-8 img {
@@ -505,9 +520,17 @@ a:hover, a:active, a:focus {
   align-items: flex-end; /* Alinea en la línea superior */
   justify-content: flex-start; /* Alinea a la izquierda */
   position: relative; /* Establece una posición relativa para el contenedor */
+}
+
+.text-container {
+  display: flex;
+  align-items: flex-end; /* Alinea en la línea superior */
+  justify-content: flex-start; /* Alinea a la izquierda */
+  position: relative; /* Establece una posición relativa para el contenedor */
   margin: 20px; /* Márgenes fijos */
 }
 
+/* Agrega una línea negra encima de la sección */
 .text-container::before {
   content: "";
   position: absolute;
@@ -530,41 +553,101 @@ a:hover, a:active, a:focus {
   font-size: 14px; /* Tamaño de fuente */
 }
 
-
-
 /*---------------------------------------
    Portfolio section              
 -----------------------------------------*/
 
-#portfolio .portfolio-thumb {
-  position: relative;
-  overflow: hidden;
+#portfolio small {
+  color: #0000;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-#portfolio .portfolio-thumb::before {
-  content: "";
+#portfolio .portfolio-thumb {
+  position: relative;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay {
   position: absolute;
-  top: 0;
+  background: #fadadd;
+  color: #0000;
+  top: 0; 
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fadadd;
-  transition: opacity 0.4s ease-in-out; /* Transición solo para la opacidad */
-}
-
-#portfolio .portfolio-thumb:hover::before {
-  opacity: 1; /* Opacidad completa al pasar el cursor */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }
 
 #portfolio .portfolio-item {
-  width: 100%;
-  height: auto;
-  transition: opacity 0.4s ease-in-out; /* Transición solo para la opacidad */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
 }
 
-#portfolio .portfolio-thumb:hover .portfolio-item {
-  opacity: 0.5; /* Opacidad reducida al pasar el cursor */
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+  opacity: 0;
 }
+
+#portfolio .text-center {
+  padding-top: 12px;
+}
+
+#portfolio .portfolio-thumb img {
+  width: 120%; /* Ancho de las imágenes */
+  max-height: 280px; /* Altura máxima de 200px para las imágenes */
+  object-fit: cover; 
+  transition: all 0.4s ease-in-out; /* Transición al pasar el cursor */
+}
+
+#portfolio .portfolio-thumb {
+  margin-top: 10px; /* Distancia entre las imágenes */
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/*---------------------------------------
+   Single Project section              
+-----------------------------------------*/
+
+#single-project {
+  text-align: center;
+}
+
+#single-project .col-md-12,
+#single-project .col-md-6,
+#single-project .col-md-4 {
+  padding-left: 0px;
+  padding-bottom: 22px;
+}
+
+#single-project .col-md-12 {
+  padding-top: 42px;
+}
+
+#single-project .text-center strong {
+  display: block;
+  padding-top: 12px;
+}
+
+#single-project a {
+  color: #555;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 14px;
+}
+
+
 
 /*---------------------------------------
    Contact section              
@@ -582,7 +665,7 @@ a:hover, a:active, a:focus {
   box-shadow: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   color: #000; /* Texto en negro */
 }
 
@@ -606,9 +689,9 @@ a:hover, a:active, a:focus {
 }
 
 #contact input[type="submit"]:hover {
-  color: #ff0080; /* Texto en blanco */
-  background: #fadadd; /* Cambiado el fondo a negro al pasar el cursor */
-  border-color: #ff0080;
+  color: #ff0080; 
+  background: #fadadd; 
+  border-color: #ff0080; 
 }
 
 /*---------------------------------------
