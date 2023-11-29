@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "nombre": "La transformación del papel",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal013.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal012.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal011.jpg"],
         "soporte": "editorial",
@@ -7,6 +8,7 @@
         "texto": "Fanzine desplegable que relata visualmente las diversas etapas de transformación del papel en aviones de papel, desde su estado inicial como una hoja plana hasta su conversión en un avión de papel listo para volar. Con ilustraciones de papeles y aviones de papel en diferentes fases, este fanzine ofrece una experiencia visualmente atractiva y poética sobre la metamorfosis del simple papel en una estructura."
     },
     {
+        "id": "2",
         "nombre": "Entre líneas",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal022.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal021.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal023.jpg"],
         "soporte": "editorial",
@@ -14,13 +16,14 @@
         "texto": "Libro que explora la intrincada relación entre el significado y el significante a través de su representación gráfica, mediante tipografías. Entre líneas ofrece una perspectiva visual de la decodificación del lenguaje, sumergiendo al lector en un viaje que ayuda a comprender los matices y complejidades de la comunicación a través de elementos gráficos y tipográficos."
     },
     {
-        "nombre": "La forma del lenguaje",
+        "id": "3",: "La forma del lenguaje",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal033.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal031.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal032.jpg"],
         "soporte": "editorial",
         "abstract": "Fanzine fotográfico.",
         "texto": "Proyecto que busca capturar la esencia visual de la comunicación humana a través de imágenes de las formas y gestos de nuestras bocas al hablar. A través de una serie de fotografías expresivas, este fanzine revela la poesía visual del lenguaje, mostrando de manera vívida la interconexión entre la expresión física y la comunicación verbal."
     },
     {
+        "id": "4",
         "nombre": "Flores marchitas",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal043.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal041.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal042.jpg"],
         "soporte": "gráfico",
@@ -28,6 +31,7 @@
         "texto": "Colección de grabados en metal que captura la belleza efímera de las flores marchitas. Estos grabados no solo exhiben la fragilidad y la decadencia de las flores, sino que también exploran la relación intrincada entre el quiebre de los pétalos y el espacio circundante. La colección incluye una reproducción meticulosa de un grabado existente junto con dos creaciones originales, todas las cuales dan vida a la melancolía y la poesía visual de la decadencia y la transformación en la naturaleza."
     },
     {
+        "id": "5",        
         "nombre": "Afiche obra de teatro",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal051.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal052.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal053.jpg"],
         "soporte": "editorial",
@@ -35,6 +39,7 @@
         "texto": " Afiche diseñado para la obra teatral Canción del niño y el ciervo, dirigida tanto a un público infantil como adulto. Con una mezcla de colores vivos y personajes ilustrados, el afiche transmite la esencia mágica y emotiva de la obra, invitando a los espectadores a sumergirse en el mundo de fantasía."
     },
     {
+        "id": "6",        
         "nombre": "Agüita pa la guatita",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal061.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal062.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal063.jpg"],
         "soporte": "ilustración",
@@ -42,6 +47,7 @@
         "texto": "Fanzine ilustrado vectorialmente dedicado al té de hierbas, que ofrece una visión personal y estética sobre sus beneficios para aliviar el dolor de güatita. Con ilustraciones a 2 colores, este fanzine se sumerge en los secretos curativos de las infusiones de hierbas."
     },
     {
+        "id": "7",        
         "nombre": "En el infierno",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal071.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal072.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal073.jpg"],
         "soporte": "ilustración",
@@ -49,6 +55,7 @@
         "texto": "Ilustración que retrata mi infierno personal, donde se presenta un mundo invadido por polillas y cucarachas. La única fuente de luz en este mundo es de la protagonista, lo que atrae a los insectos hacia ella. A través de un juego vívido de luces y sombras, la ilustración evoca una sensación intensa de aislamiento y miedo en un entorno opresivo y oscuro."
     },
     {
+        "id": "8",        
         "nombre": "Errado",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal081.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal082.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal083.jpg"],
         "soporte": "editorial",
