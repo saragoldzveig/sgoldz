@@ -16,7 +16,8 @@
         "texto": "Libro que explora la intrincada relación entre el significado y el significante a través de su representación gráfica, mediante tipografías. Entre líneas ofrece una perspectiva visual de la decodificación del lenguaje, sumergiendo al lector en un viaje que ayuda a comprender los matices y complejidades de la comunicación a través de elementos gráficos y tipográficos."
     },
     {
-        "id": "3",: "La forma del lenguaje",
+        "id": "3",
+        "nombre": "La forma del lenguaje",
         "fotos": ["https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal033.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal031.jpg", "https://raw.githubusercontent.com/saragoldzveig/clase12/main/FotosPortafolio/modal032.jpg"],
         "soporte": "editorial",
         "abstract": "Fanzine fotográfico.",
